@@ -23,7 +23,7 @@ print('f[ГГц]\t    σ[м^2]', file=fil)
 # Вычислительная часть
 c = 3e8
 r = D / 2
-f = np.linspace(fmin, fmax + 1, 500)
+f = np.linspace(fmin, fmax + 1, 600)
 σ1 = []
 for fx in f:
     λ = c / fx
