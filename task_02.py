@@ -10,14 +10,14 @@ if not os.path.isdir("results"):
     os.mkdir("results")
 url = 'http://www.jenyay.net/uploads/Student/Modelling/task_02.txt'
 task = rqst.get(url)
-z = re.search(r'^4\..+', task.text, flags=re.M)
+z = re.search(r'^9\..+', task.text, flags=re.M)
 z1 = (z.group().split(';'))
 D = float(z1[0].split('=')[1])
 fmin = float(z1[1].split('=')[1])
 fmax = float(z1[2].split('=')[1])
 
 # открытие файла с результатами и создание заголовка
-fil = open('results/task_01_4o-506c_Shemshura_09.txt', 'w', encoding='utf-8')
+fil = open('results/task_02_4o-506c_Shemshura_09.txt', 'w', encoding='utf-8')
 print('f[ГГц]\t    σ[м^2]', file=fil)
 
 # Вычислительная часть
