@@ -54,9 +54,9 @@ fil.close()
 
 # Построение графика
 plt.figure()
-plt.plot(2 * np.pi * f * r / c, σ1)
+plt.plot(f, σ1)
 plt.grid()
 plt.ylabel('ЭПР')
-plt.xlabel('2πr/λ')
+plt.xlabel('f')
 plt.savefig('img.png')
 plt.show()
